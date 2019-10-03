@@ -1,17 +1,33 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "A Hugo website"
-theme = "hugo-lithium"
-googleAnalytics = ""
-disqusShortname = ""
+title = "MA[46]15 Data Science Project"
+theme = "gohugo-theme-ananke"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 12 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
+enableRobotsTXT = true
+
+
 [permalinks]
-    post = "/:year/:month/:day/:slug/"
+    post = ":month/:day/:slug/"
 
 [[menu.main]]
     name = "About"
     url = "/about/"
+    
+[[menu.main]]
+    name = "Data"
+    url = "/data/"
+
+
+[[menu.main]]
+    name = "EDA"
+    url = "/eda/"
+
 
 [params]
     description = "A website built through Hugo and blogdown."
@@ -27,10 +43,16 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
     # path to the favicon, under "static"
     favicon = "favicon.ico"
-
-    [params.logo]
-    url = "logo.png"
-    width = 50
-    height = 50
-    alt = "Logo"
+    facebook = ""
+    twitter = ""
+    instagram = ""
+    youtube = ""
+    github = ""
+    gitlab = ""
+    linkedin = ""
+    mastodon = ""
+    # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+    background_color_class = "bg-black"
+    featured_image = "/images/data-science.png"
+    recent_posts_number = 3
 
