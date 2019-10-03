@@ -3,6 +3,4 @@
 .RData
 .Ruserdata
 public/
-content/*.html
-content/*.markdown
 static/post/
