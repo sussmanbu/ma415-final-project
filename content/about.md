@@ -20,3 +20,6 @@ Dan is a professor in the Math/Stat department and is the instructor for the cou
 
 This is a "hello world" example website for the [**blogdown**](https://github.com/rstudio/blogdown) package. The theme was forked from [@budparr/gohugo-theme-ananke](https://themes.gohugo.io/gohugo-theme-ananke/) and modified by [Yihui Xie](https://github.com/yihui/hugo-lithium).
 Dan Sussman added to this further
+
+
+`$Some Math$`
