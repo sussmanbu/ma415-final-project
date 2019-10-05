@@ -26,5 +26,17 @@ Here are the steps you'll need to take today.
 7. You should now be able to go back to _Overview_, see that "Your site is deployed", and click on the link to see your site. 
 
 
-## Steps for Group
+## Steps for Everyone
 
+2. Clone your repository to your laptop and open the project file.
+3. Install the blogdown package using `install.packages("blogdown")`. 
+4. Run `blogdown::install_hugo()`. _Hugo_ / _blogdown_ are the tools for transforming your site from Markdown/RMarkdown into the structure of the website.
+5. Run the command `blogdown::serve_site()`. If all goes well you will see a preview of the site in the RStudio Viewer.
+
+## Steps for the Group
+
+Everyone should now have their computer set up with blogdown, hugo and your team should have their netlify account up.
+In turn do the following.
+
+0. Press Pull in the Git tab to get the latest changes.
+1. Open the `about.md` file and add your name, write a quick introduction, and include a link to your Github account page.
