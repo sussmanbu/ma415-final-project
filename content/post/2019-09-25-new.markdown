@@ -1,7 +1,7 @@
 ---
 title: "A .Rmarkdown file"
 author: "Daniel Sussman"
-date: 2019-07-23T21:13:14-05:00
+date: 2019-09-25T21:13:14-05:00
 categories: ["R"]
 tags: ["R Markdown"]
 summary: "We can also write documents with the `.Rmarkdown` extension"
@@ -23,6 +23,6 @@ We can still write code.
 ```
 
 ```
-##  [1] 0.51226735 0.10439927 0.74830304 0.26250438 0.61859474 0.57555256
-##  [7] 0.07294813 0.56096496 0.40022628 0.75636375
+##  [1] 0.3611831 0.1413262 0.4193007 0.4571213 0.6925642 0.1129214 0.8238227
+##  [8] 0.9159461 0.7738875 0.8945682
 ```
