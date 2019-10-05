@@ -49,3 +49,5 @@ The only change you need to make is to update the `title` to be your group name.
 Again, commit and push your changes.
 
 You should be all set and see the changes again on netlify.
+
+Read through the posts on your website to learn a bit about how things work. Look at the structure of the `content` folder and compare it to the website structure.
