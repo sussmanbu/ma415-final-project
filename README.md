@@ -40,3 +40,12 @@ In turn do the following.
 
 0. Press Pull in the Git tab to get the latest changes.
 1. Open the `about.md` file and add your name, write a quick introduction, and include a link to your Github account page.
+2. Commit the changes to `about.md` and Push your changes.
+3. Check that your changes are showing up on netlify.
+4. Make sure to wait until one team member is done before the next person starts again at 0.
+
+Finally, the last person to update the about page will update the `config.toml` file.
+The only change you need to make is to update the `title` to be your group name.
+Again, commit and push your changes.
+
+You should be all set and see the changes again on netlify.
