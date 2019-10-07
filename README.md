@@ -13,13 +13,13 @@ You will be working with your group to maintain the website, providing weekly bl
 
 Here are the steps you'll need to take today.
 
-0. Your team will share a Github repository for the final project. Accept this assignment and make sure to pick your team.
+0. Your team will share a Github repository for the final project. Accept this assignment and make sure to pick your team. Also, make sure to accept the invitation to the sussmanbu organization on Github.
 1. Choose a team leader. They will be in charge of the _Netlify_ account which is used to host the web site.
 
 ## Steps for your team leader
 
 2. The team leader will go to [https://www.netlify.com/](https://www.netlify.com/). Click _Sign Up_ and use your Github account. Follow the steps to sign up.
-3. Once you are set up and logged in, click _New site from Git_. Click _Github_ and authorize Netlify to access your account.
+3. Once you are set up and logged in, click _New site from Git_. Click _Github_ and authorize Netlify to access your account by clicking "Configure the Netlify app on GitHub" link.
 4. Find your teams repository using the _Search repos_ field and select it from the list.
 5. You shouldn't have to adjust any options so click _Deploy Site_. Your site is now being deployed.
 6. In the meantime, click _Site Settings_ and then _Change site name_ and use your team name (or something close) as the site name.
