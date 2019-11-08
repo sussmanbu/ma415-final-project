@@ -36,3 +36,19 @@ pie(
   init.angle = -50, border = NA
 )
 ```
+
+# Including Shiny Apps
+
+```{r}
+knitr::include_app("https://dpmcsuss.shinyapps.io/clt_shiny/", height  = "1000px")
+```
+
+
+# Including plotly
+
+```{r}
+library(plotly)
+p <- plot_ly(economics, x = ~date, y = ~unemploy / pop)
+p
+```
+
