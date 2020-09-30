@@ -13,7 +13,7 @@ You will be working with your group to maintain the website, providing weekly bl
 
 Here are the steps you'll need to take today.
 
-0. Your team will share a Github repository for the final project. Accept this assignment and make sure to pick your team. Also, make sure to accept the invitation to the sussmanbu organization on Github.
+0. Your team will share a Github repository for the final project. Accept this assignment and make sure to pick your team. The first person who accepts will have to create a new team. Use the teamname you gave in Slack.  Also, make sure to accept the invitation to the sussmanbu organization on Github.
 1. Choose a team leader. They will be in charge of the _Netlify_ account which is used to host the web site.
 
 ## Steps for your team leader
@@ -89,3 +89,5 @@ Some general guidlines are:
 2. Always commit `.md` files.
 3. Usually commit `.html` files unless they share a name with a `.md`.
 4. Always commit changes in the `static` folder.
+
+__Never__ commit large data files. This can cause some challenges. 
