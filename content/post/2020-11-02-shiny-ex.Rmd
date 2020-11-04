@@ -1,0 +1,20 @@
+---
+title: shiny_ex
+author: ~
+date: '2020-11-02'
+slug: shiny-ex
+categories: []
+tags: []
+description: ''
+featured_image: ''
+---
+
+
+```{r}
+knitr::include_app("https://dpmcsuss.shinyapps.io/nba3/", height="1000px")
+```
+
+
+[Shiny NBA app](https://dpmcsuss.shinyapps.io/nba3/)
+
+[flex](/flex.html)
