@@ -1,0 +1,333 @@
+---
+title: Example
+author: Daniel Sussman
+date: '2021-02-09'
+slug: []
+categories: []
+tags: []
+description: This is a description of the post.
+toc: yes
+authors: []
+series: []
+lastmod: '2021-02-09T16:32:20-05:00'
+featuredVideo: ~
+featuredImage: /images/a-static-image.png
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+
+</div>
+
+<div id="just-like-an-rmarkdown" class="section level2">
+<h2>Just like an RMarkdown</h2>
+<p>Show code …</p>
+<pre class="r"><code>library(tidyverse)
+msleep</code></pre>
+<pre><code>## # A tibble: 83 x 11
+##    name  genus vore  order conservation sleep_total sleep_rem sleep_cycle awake
+##    &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;       &lt;dbl&gt; &lt;dbl&gt;
+##  1 Chee… Acin… carni Carn… lc                  12.1      NA        NA      11.9
+##  2 Owl … Aotus omni  Prim… &lt;NA&gt;                17         1.8      NA       7  
+##  3 Moun… Aplo… herbi Rode… nt                  14.4       2.4      NA       9.6
+##  4 Grea… Blar… omni  Sori… lc                  14.9       2.3       0.133   9.1
+##  5 Cow   Bos   herbi Arti… domesticated         4         0.7       0.667  20  
+##  6 Thre… Brad… herbi Pilo… &lt;NA&gt;                14.4       2.2       0.767   9.6
+##  7 Nort… Call… carni Carn… vu                   8.7       1.4       0.383  15.3
+##  8 Vesp… Calo… &lt;NA&gt;  Rode… &lt;NA&gt;                 7        NA        NA      17  
+##  9 Dog   Canis carni Carn… domesticated        10.1       2.9       0.333  13.9
+## 10 Roe … Capr… herbi Arti… lc                   3        NA        NA      21  
+## # … with 73 more rows, and 2 more variables: brainwt &lt;dbl&gt;, bodywt &lt;dbl&gt;</code></pre>
+<p>… or show a nicer table …</p>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="10%" />
+<col width="4%" />
+<col width="12%" />
+<col width="9%" />
+<col width="9%" />
+<col width="7%" />
+<col width="9%" />
+<col width="4%" />
+<col width="6%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">genus</th>
+<th align="left">vore</th>
+<th align="left">order</th>
+<th align="left">conservation</th>
+<th align="right">sleep_total</th>
+<th align="right">sleep_rem</th>
+<th align="right">sleep_cycle</th>
+<th align="right">awake</th>
+<th align="right">brainwt</th>
+<th align="right">bodywt</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Cheetah</td>
+<td align="left">Acinonyx</td>
+<td align="left">carni</td>
+<td align="left">Carnivora</td>
+<td align="left">lc</td>
+<td align="right">12.1</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">11.90</td>
+<td align="right">NA</td>
+<td align="right">50.000</td>
+</tr>
+<tr class="even">
+<td align="left">Northern fur seal</td>
+<td align="left">Callorhinus</td>
+<td align="left">carni</td>
+<td align="left">Carnivora</td>
+<td align="left">vu</td>
+<td align="right">8.7</td>
+<td align="right">1.4</td>
+<td align="right">0.3833333</td>
+<td align="right">15.30</td>
+<td align="right">NA</td>
+<td align="right">20.490</td>
+</tr>
+<tr class="odd">
+<td align="left">Dog</td>
+<td align="left">Canis</td>
+<td align="left">carni</td>
+<td align="left">Carnivora</td>
+<td align="left">domesticated</td>
+<td align="right">10.1</td>
+<td align="right">2.9</td>
+<td align="right">0.3333333</td>
+<td align="right">13.90</td>
+<td align="right">0.0700</td>
+<td align="right">14.000</td>
+</tr>
+<tr class="even">
+<td align="left">Long-nosed armadillo</td>
+<td align="left">Dasypus</td>
+<td align="left">carni</td>
+<td align="left">Cingulata</td>
+<td align="left">lc</td>
+<td align="right">17.4</td>
+<td align="right">3.1</td>
+<td align="right">0.3833333</td>
+<td align="right">6.60</td>
+<td align="right">0.0108</td>
+<td align="right">3.500</td>
+</tr>
+<tr class="odd">
+<td align="left">Domestic cat</td>
+<td align="left">Felis</td>
+<td align="left">carni</td>
+<td align="left">Carnivora</td>
+<td align="left">domesticated</td>
+<td align="right">12.5</td>
+<td align="right">3.2</td>
+<td align="right">0.4166667</td>
+<td align="right">11.50</td>
+<td align="right">0.0256</td>
+<td align="right">3.300</td>
+</tr>
+<tr class="even">
+<td align="left">Pilot whale</td>
+<td align="left">Globicephalus</td>
+<td align="left">carni</td>
+<td align="left">Cetacea</td>
+<td align="left">cd</td>
+<td align="right">2.7</td>
+<td align="right">0.1</td>
+<td align="right">NA</td>
+<td align="right">21.35</td>
+<td align="right">NA</td>
+<td align="right">800.000</td>
+</tr>
+<tr class="odd">
+<td align="left">Gray seal</td>
+<td align="left">Haliochoerus</td>
+<td align="left">carni</td>
+<td align="left">Carnivora</td>
+<td align="left">lc</td>
+<td align="right">6.2</td>
+<td align="right">1.5</td>
+<td align="right">NA</td>
+<td align="right">17.80</td>
+<td align="right">0.3250</td>
+<td align="right">85.000</td>
+</tr>
+<tr class="even">
+<td align="left">Thick-tailed opposum</td>
+<td align="left">Lutreolina</td>
+<td align="left">carni</td>
+<td align="left">Didelphimorphia</td>
+<td align="left">lc</td>
+<td align="right">19.4</td>
+<td align="right">6.6</td>
+<td align="right">NA</td>
+<td align="right">4.60</td>
+<td align="right">NA</td>
+<td align="right">0.370</td>
+</tr>
+<tr class="odd">
+<td align="left">Slow loris</td>
+<td align="left">Nyctibeus</td>
+<td align="left">carni</td>
+<td align="left">Primates</td>
+<td align="left">NA</td>
+<td align="right">11.0</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">13.00</td>
+<td align="right">0.0125</td>
+<td align="right">1.400</td>
+</tr>
+<tr class="even">
+<td align="left">Northern grasshopper mouse</td>
+<td align="left">Onychomys</td>
+<td align="left">carni</td>
+<td align="left">Rodentia</td>
+<td align="left">lc</td>
+<td align="right">14.5</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">9.50</td>
+<td align="right">NA</td>
+<td align="right">0.028</td>
+</tr>
+<tr class="odd">
+<td align="left">Tiger</td>
+<td align="left">Panthera</td>
+<td align="left">carni</td>
+<td align="left">Carnivora</td>
+<td align="left">en</td>
+<td align="right">15.8</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">8.20</td>
+<td align="right">NA</td>
+<td align="right">162.564</td>
+</tr>
+<tr class="even">
+<td align="left">Jaguar</td>
+<td align="left">Panthera</td>
+<td align="left">carni</td>
+<td align="left">Carnivora</td>
+<td align="left">nt</td>
+<td align="right">10.4</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">13.60</td>
+<td align="right">0.1570</td>
+<td align="right">100.000</td>
+</tr>
+<tr class="odd">
+<td align="left">Lion</td>
+<td align="left">Panthera</td>
+<td align="left">carni</td>
+<td align="left">Carnivora</td>
+<td align="left">vu</td>
+<td align="right">13.5</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">10.50</td>
+<td align="right">NA</td>
+<td align="right">161.499</td>
+</tr>
+<tr class="even">
+<td align="left">Caspian seal</td>
+<td align="left">Phoca</td>
+<td align="left">carni</td>
+<td align="left">Carnivora</td>
+<td align="left">vu</td>
+<td align="right">3.5</td>
+<td align="right">0.4</td>
+<td align="right">NA</td>
+<td align="right">20.50</td>
+<td align="right">NA</td>
+<td align="right">86.000</td>
+</tr>
+<tr class="odd">
+<td align="left">Common porpoise</td>
+<td align="left">Phocoena</td>
+<td align="left">carni</td>
+<td align="left">Cetacea</td>
+<td align="left">vu</td>
+<td align="right">5.6</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">18.45</td>
+<td align="right">NA</td>
+<td align="right">53.180</td>
+</tr>
+<tr class="even">
+<td align="left">Bottle-nosed dolphin</td>
+<td align="left">Tursiops</td>
+<td align="left">carni</td>
+<td align="left">Cetacea</td>
+<td align="left">NA</td>
+<td align="right">5.2</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">18.80</td>
+<td align="right">NA</td>
+<td align="right">173.330</td>
+</tr>
+<tr class="odd">
+<td align="left">Genet</td>
+<td align="left">Genetta</td>
+<td align="left">carni</td>
+<td align="left">Carnivora</td>
+<td align="left">NA</td>
+<td align="right">6.3</td>
+<td align="right">1.3</td>
+<td align="right">NA</td>
+<td align="right">17.70</td>
+<td align="right">0.0175</td>
+<td align="right">2.000</td>
+</tr>
+<tr class="even">
+<td align="left">Arctic fox</td>
+<td align="left">Vulpes</td>
+<td align="left">carni</td>
+<td align="left">Carnivora</td>
+<td align="left">NA</td>
+<td align="right">12.5</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">11.50</td>
+<td align="right">0.0445</td>
+<td align="right">3.380</td>
+</tr>
+<tr class="odd">
+<td align="left">Red fox</td>
+<td align="left">Vulpes</td>
+<td align="left">carni</td>
+<td align="left">Carnivora</td>
+<td align="left">NA</td>
+<td align="right">9.8</td>
+<td align="right">2.4</td>
+<td align="right">0.3500000</td>
+<td align="right">14.20</td>
+<td align="right">0.0504</td>
+<td align="right">4.230</td>
+</tr>
+</tbody>
+</table>
+<p>… or show a plot</p>
+<pre class="r"><code>ggplot(msleep, aes(x = sleep_total, y = bodywt)) +
+  geom_point() + scale_x_log10() + scale_y_log10()</code></pre>
+<div class="figure"><span id="fig:unnamed-chunk-3"></span>
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" alt="Wow captions too!" width="672" />
+<p class="caption">
+Figure 1: Wow captions too!
+</p>
+</div>
+<p>I can even put some math <span class="math inline">\(e^x\)</span> or more
+<span class="math display">\[e^{\pi i} + 1 = 0.\]</span></p>
+</div>

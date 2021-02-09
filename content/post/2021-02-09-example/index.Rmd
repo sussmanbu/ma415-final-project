@@ -1,0 +1,40 @@
+---
+title: Example
+author: Daniel Sussman
+date: '2021-02-09'
+slug: []
+categories: []
+tags: []
+description: This is a description of the post.
+toc: yes
+authors: []
+series: []
+lastmod: '2021-02-09T16:32:20-05:00'
+featuredVideo: ~
+featuredImage: /images/a-static-image.png
+---
+
+## Just like an RMarkdown
+
+Show code ...
+
+```{r, message=FALSE}
+library(tidyverse)
+msleep
+```
+
+... or show a nicer table ...
+
+```{r, echo=FALSE}
+msleep %>% filter(vore == "carni") %>% knitr::kable()
+```
+
+... or show a plot
+
+```{r, fig.cap = "Wow captions too!"}
+ggplot(msleep, aes(x = sleep_total, y = bodywt)) +
+  geom_point() + scale_x_log10() + scale_y_log10()
+```
+
+I can even put some math $e^x$ or more
+$$e^{\pi i} + 1 = 0.$$

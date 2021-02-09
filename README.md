@@ -13,6 +13,7 @@ You will be working with your group to maintain the website, providing weekly bl
 
 Here are the steps you'll need to take today.
 
+
 0. Your team will share a Github repository for the final project. Accept this assignment and make sure to pick your team. Also, make sure to accept the invitation to the sussmanbu organization on Github.
 1. Choose a team leader. They will be in charge of the _Netlify_ account which is used to host the web site.
 
@@ -27,6 +28,8 @@ Here are the steps you'll need to take today.
 
 
 ## Steps for Everyone
+
+Set up options as per ?new_post
 
 2. Clone your repository to your laptop and open the project file.
 3. Install the blogdown package using `install.packages("blogdown")`. 
