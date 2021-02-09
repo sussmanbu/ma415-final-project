@@ -29,6 +29,11 @@ enableRobotsTXT = true
     url = "/eda/"
 
 
+
+[[menu.main]]
+    name = "Big Picture"
+    url = "/big_picture/"
+
 [params]
     description = "A website built through Hugo and blogdown."
 
