@@ -23,6 +23,8 @@ library(tidyverse)
 msleep
 ```
 
+<br>
+
 ... or show a nicer table ...
 
 ```{r, echo=FALSE}
