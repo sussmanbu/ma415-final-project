@@ -1,8 +1,0 @@
----
-description: ""
-featuredImage: ""
-tags: []
-title: Exploratory Data Analysis
----
-
-We describe here our exploratory data analysis.

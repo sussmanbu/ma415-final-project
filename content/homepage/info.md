@@ -2,7 +2,7 @@
 title: MA 415 Final Project
 draft: false
 role: Team NAME
-bio: This is my data science project.
+bio: This is my data science project. Check out the links at the top.
 organization:
   name: Boston University
   url: https://www.bu.edu/

@@ -2,7 +2,7 @@ baseURL: /
 title: MA 415 Project
 
 # Comment when installing using Hugo Modules
-theme: hugo-eureka-master
+theme: eureka
 # Uncomment when installing using Hugo Modules
 # theme: github.com/wangchucheng/hugo-eureka
 
@@ -53,8 +53,8 @@ menu:
     - name: Big Picture
       url: /big_picture/
       weight: 3
-    - name: EDA
-      url: /eda/
+    - name: Analysis
+      url: /analysis/
       weight: 4
     - name: Data
       url: /data/
@@ -72,11 +72,11 @@ params:
   titleSeparator:
   
   # Options: auto, light and dark. Default is auto.
-  colorScheme: light
+  colorScheme: auto
   
   # E.g. Person, Organization, LocalBusiness, Project, EducationalOrganization
-  siteType: Person
-  icon: images/icon.png
+  siteType: Project
+  icon: images/R.png
   publisherName: C. Wang
   publisherLogo:
   

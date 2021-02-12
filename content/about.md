@@ -1,6 +1,11 @@
 ---
 title: About
+lastmod: 2021-02-12T09:20:50-05:00
+featuredVideo:
+featuredImage:
+draft: false
 ---
+
 
 This is a website for the final project for MA[46]15 Data Science with R by Team TEAMNAME.
 The members of this team are below.
