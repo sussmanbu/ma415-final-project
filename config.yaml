@@ -76,7 +76,7 @@ params:
   
   # E.g. Person, Organization, LocalBusiness, Project, EducationalOrganization
   siteType: Project
-  icon: images/R.png
+  icon: images/icon.png
   publisherName: C. Wang
   publisherLogo:
   

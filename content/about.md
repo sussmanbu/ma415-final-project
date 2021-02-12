@@ -22,4 +22,4 @@ Dan is a professor in the Math/Stat department and is the instructor for the cou
 
 ### Info About this Template.
 
-This is based off a "hello world" example website for the [**blogdown**](https://github.com/rstudio/blogdown) package. The theme was forked from [@budparr/gohugo-theme-ananke](https://themes.gohugo.io/gohugo-theme-ananke/) and modified by Dan Sussman who added MathJax support. Thanks to [Yihui Xie](https://github.com/yihui/) for putting `blogdown` together and for providing the Javascript to use MathJax.
+This is based off a "hello world" example website for the [**blogdown**](https://github.com/rstudio/blogdown) package. The [Eureka](https://www.wangchucheng.com/en/docs/eureka/) theme created originally created by  [C. Wang](https://www.wangchucheng.com/zh/) and [R. Ma](https://www.ruiqima.com/zh/) and then modified by Dan Sussman who added MathJax support. Thanks to [Yihui Xie](https://github.com/yihui/) for putting `blogdown` together and for providing the Javascript to use MathJax.

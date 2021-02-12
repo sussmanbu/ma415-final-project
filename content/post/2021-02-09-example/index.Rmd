@@ -20,7 +20,9 @@ Show code ...
 
 ```{r, message=FALSE}
 library(tidyverse)
-msleep
+msleep %>%
+  group_by(vore) %>%
+  summarize(`average body weight` = mean(bodywt))
 ```
 
 <br>
@@ -28,7 +30,10 @@ msleep
 ... or show a nicer table ...
 
 ```{r, echo=FALSE}
-msleep %>% filter(vore == "carni") %>% knitr::kable()
+msleep %>%
+  group_by(vore) %>%
+  summarize(`average body weight` = mean(bodywt)) %>%
+  knitr::kable()
 ```
 
 ... or show a plot
