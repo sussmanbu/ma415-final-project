@@ -24,7 +24,7 @@ For small datasets, you can use the `dataset` folder that is tracked by github. 
 
 For larger datasets, you'll need to create a new folder in the project root directory called `dataset-ignore`. This will be ignored by git which will help you avoid issues with Github's size limits. Your team will have to manually make sure the data files in `dataset-ignore` are synced across team members.
 
-Your [`load_and_clean_data.R`](load_and_clean_data.R) file is how you will load your data. Here is a an example of a very simple one.
+Your [load_and_clean_data.R](/load_and_clean_data.R) file is how you will load your data. Here is a an example of a very simple one.
 
 ```{r}
 source(

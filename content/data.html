@@ -23,7 +23,7 @@ Data from the census, weather data, economic data, are all relatively easy to co
 <p>My recommendation for sharing the data is to not track it on Github unless the data is relatively small &lt;2-3mb.</p>
 <p>For small datasets, you can use the <code>dataset</code> folder that is tracked by github. Add the files just like you would any other file.</p>
 <p>For larger datasets, you’ll need to create a new folder in the project root directory called <code>dataset-ignore</code>. This will be ignored by git which will help you avoid issues with Github’s size limits. Your team will have to manually make sure the data files in <code>dataset-ignore</code> are synced across team members.</p>
-<p>Your <a href="load_and_clean_data.R"><code>load_and_clean_data.R</code></a> file is how you will load your data. Here is a an example of a very simple one.</p>
+<p>Your <a href="/load_and_clean_data.R">load_and_clean_data.R</a> file is how you will load your data. Here is a an example of a very simple one.</p>
 <pre class="r"><code>source(
   here::here(&quot;static&quot;, &quot;load_and_clean_data.R&quot;),
   echo = TRUE # Use echo=FALSE or omit it to avoid code output  
