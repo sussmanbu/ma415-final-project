@@ -14,6 +14,10 @@ featuredVideo: ~
 featuredImage: /images/a-static-image.png
 ---
 
+This file is from `content/post/2021-02-09-example/index.Rmd`. I made it by running `blogdown::new_post("example", ext = ".Rmd")
+
+Note that images like the one above are stored in `static/images` in your project folder.
+
 ## Just like an RMarkdown
 
 Show code ...
@@ -27,7 +31,7 @@ msleep %>%
 
 <br>
 
-... or show a nicer table ...
+... or a nicer table ...
 
 ```{r, echo=FALSE}
 msleep %>%
@@ -36,7 +40,7 @@ msleep %>%
   knitr::kable()
 ```
 
-... or show a plot
+... or make a plot.
 
 ```{r, fig.cap = "Wow captions too!"}
 ggplot(msleep, aes(x = sleep_total, y = bodywt)) +

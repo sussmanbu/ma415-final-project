@@ -20,6 +20,8 @@ featuredImage: /images/a-static-image.png
 
 </div>
 
+<p>This file is from <code>content/post/2021-02-09-example/index.Rmd</code>. I made it by running `blogdown::new_post(“example”, ext = “.Rmd”)</p>
+<p>Note that images like the one above are stored in <code>static/images</code> in your project folder.</p>
 <div id="just-like-an-rmarkdown" class="section level2">
 <h2>Just like an RMarkdown</h2>
 <p>Show code …</p>
@@ -36,7 +38,7 @@ msleep %&gt;%
 ## 4 omni                   12.7  
 ## 5 &lt;NA&gt;                    0.858</code></pre>
 <p><br></p>
-<p>… or show a nicer table …</p>
+<p>… or a nicer table …</p>
 <table>
 <thead>
 <tr class="header">
@@ -67,7 +69,7 @@ msleep %&gt;%
 </tr>
 </tbody>
 </table>
-<p>… or show a plot</p>
+<p>… or make a plot.</p>
 <pre class="r"><code>ggplot(msleep, aes(x = sleep_total, y = bodywt)) +
   geom_point() + scale_x_log10() + scale_y_log10()</code></pre>
 <div class="figure"><span id="fig:unnamed-chunk-3"></span>

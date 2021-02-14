@@ -7,6 +7,8 @@ featuredImage: images/data-import-cheatsheet-thumbs.png
 draft: false
 ---
 
+This comes from the file `content/data.Rmd`.
+
 Your first steps in this project will be to find data to work on.
 
 I recommend trying to find data that interests you and that you are knowledgeable about. A bad example would be if you have no interest in video games but your data set is about video games. I also recommend finding data that is related to current events, social justice, and other areas that have an impact.
