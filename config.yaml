@@ -61,7 +61,7 @@ menu:
       weight: 2
 
 params:      
-  description: Eureka is a elegant and powerful theme for Hugo.
+  description: Template and directions for the MA[46]15 final project.
   
   repoURL:
   # If it is a Github repo, leave blank
@@ -77,8 +77,8 @@ params:
   # E.g. Person, Organization, LocalBusiness, Project, EducationalOrganization
   siteType: Project
   icon: images/icon.png
-  publisherName: C. Wang
-  publisherLogo:
+  publisherName: Daniel Sussman
+  publisherLogo: https://upload.wikimedia.org/wikipedia/en/1/15/Boston_University_Terriers_logo.svg
   
   highlight:
     handler: highlightjs
