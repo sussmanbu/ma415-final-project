@@ -12,6 +12,14 @@ This comes from the file `content/analysis.Rmd`.
 We describe here our detailed data analysis.
 
 
+
+Edits! Edits!
+
+```{r}
+plot(runif(100))
+sum(runif(100))
+```
+
 -------
 
 NOTE: Your DA can be broken up into multiple pages if that helps with your organization.
