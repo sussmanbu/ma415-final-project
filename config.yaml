@@ -1,4 +1,4 @@
-baseURL: /
+baseURL: https://ma415final.netlify.app/
 title: MA 415 Project
 
 # Comment when installing using Hugo Modules
@@ -110,4 +110,6 @@ params:
     commento:
       # If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty.
       url:
-      
+
+ignoreFiles: 
+  ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]

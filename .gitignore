@@ -2,6 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
-public/
-dataset-ignore/
-.DS_store
+/public/
+/dataset-ignore/
+/resources/
+.DS_Store
+Thumbs.db
