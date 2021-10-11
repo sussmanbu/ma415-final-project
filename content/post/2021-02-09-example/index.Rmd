@@ -1,7 +1,7 @@
 ---
 title: Example Post
 author: Daniel Sussman
-date: '2021-02-12'
+date: '2021-10-11'
 slug: []
 categories: []
 tags: []
@@ -9,7 +9,7 @@ description: This is a description of the post.
 toc: yes
 authors: []
 series: []
-lastmod: '2021-02-12'
+lastmod: '2021-10-11'
 featuredVideo: ~
 featuredImage: /images/a-static-image.png
 ---
@@ -21,6 +21,7 @@ Note that images like the one above are stored in `static/images` in your projec
 ## Just like an RMarkdown
 
 Show code ...
+
 
 ```{r, message=FALSE}
 library(tidyverse)
