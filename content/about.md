@@ -1,6 +1,6 @@
 ---
 title: About
-lastmod: 2021-02-12T09:20:50-05:00
+lastmod: 2021-10-11T09:20:50-05:00
 featuredVideo:
 featuredImage:
 draft: false
@@ -11,7 +11,7 @@ This comes from the file `content/about.md`.
 This is a website for the final project for MA[46]15 Data Science with R by Team TEAMNAME.
 The members of this team are below.
 
-## Leon Wang
+## Wan-Chi Hsin
 
 Leon is a Ph.D. student in Stats and is the Teaching Fellow for the course.
 
@@ -19,7 +19,7 @@ Leon is a Ph.D. student in Stats and is the Teaching Fellow for the course.
 
 Dan is a professor in the Math/Stat department and is the instructor for the course.
 
-
+<!-- Please leave in the information below -->
 
 ### Info About this Template.
 

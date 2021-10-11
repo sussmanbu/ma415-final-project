@@ -11,22 +11,30 @@ This comes from the file `content/big_picture.Rmd`.
 
 Think of this page as your 538/Upshot style article. This means that you should try to tell a story through the data and your analysis. Read articles from those sites and similar sites to get a feeling for what they are like. Importantly, these should be geared towards the general public. You shouldn't assume the reader understands how to interpret a linear regression. Focus on interpretation and visualizations.
 
+---
 
-This page should have no code visible, i.e. use echo=FALSE.
+## Rubric: On this page
+
+You will
+
+
 
 * Title
-  * Your big picture page should have a creative title/headline that provides a hint about your thesis.
+  * Your big picture page should have a creative/click-baity title/headline that provides a hint about your thesis.
 * Clarity of Explanation
-  * You should have a clear thesis/goal for this page. What are you trying to show? Make sure that you explain your analysis in detail but don't go into to much mathematics or statistics. The audience for this page is the general public (to the extent possible).
+  * You should have a clear thesis/goal for this page. What are you trying to show? Make sure that you explain your analysis in detail but don't go into top much mathematics or statistics. The audience for this page is the general public (to the extent possible).
 * Quality of Figures
-  * Each figure should be very polished and also not too complicated. There should be a clear interpretation of the figure so the figure has a clear purpose.
+  * Each figure should be very polished and also not too complicated. There should be a clear interpretation of the figure so the figure has a clear purpose. Even something like a histogram can be difficult to interpret for non-experts.
 * Creativity
   * Do your best to make things interesting. Think of a story. Think of how each part of your analysis supports the previous part or provides a different perspective.
   
-  
+**Note**: This page should have no code visible, i.e. use `echo=FALSE`.  
+
 ---
 
-## Interactive
+## Rubric: Other components
+
+### Interactive
 
 You will also be required to make an interactive dashboard like [this one](/flex/flex.html).
 
@@ -34,11 +42,11 @@ Your Big Data page should include a link to an interactive dashboard. The dashbo
 
 * Quality and ease of use of the interactive components.
 Is it clear what can be explored using your interactive components?
-Does it enhance and reinforce your conlusions from the Big Picture?
-Plotly with default hover text does not count.
+Does it enhance and reinforce your conclusions from the Big Picture?
+Plotly with default hover text will get no credit. Be creative!
 
 
-## Video Recording
+### Video Recording
 
 Make a video recording (probably using Zoom) demonstrating your interactive components.
 You should provide a quick explanation of your data and demonstrate some of the conclusions from your EDA.
@@ -47,7 +55,7 @@ Include a link to your video (and password if needed) in your README.md file on 
 This can be presented by any subset of the team members.
 
 
-## Rest of the Site
+### Rest of the Site
 
 Finally, here are important things to keep in mind for the rest of the site. 
 

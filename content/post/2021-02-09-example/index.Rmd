@@ -14,7 +14,7 @@ featuredVideo: ~
 featuredImage: /images/a-static-image.png
 ---
 
-This file is from `content/post/2021-02-09-example/index.Rmd`. I made it by running `blogdown::new_post("example", ext = ".Rmd")
+This file is from `content/post/2021-02-09-example/index.Rmd`. I made it by running `blogdown::new_post("example", ext = ".Rmd")`.
 
 Note that images like the one above are stored in `static/images` in your project folder.
 
@@ -47,7 +47,7 @@ ggplot(msleep, aes(x = sleep_total, y = bodywt)) +
   geom_point() + scale_x_log10() + scale_y_log10()
 ```
 
-I can even put some math $e^x$ or more
+I can even put in some math $e^x$ or a displayed equation
 $$e^{\pi i} + 1 = 0.$$
 
 

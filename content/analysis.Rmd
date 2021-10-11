@@ -13,18 +13,16 @@ We describe here our detailed data analysis.
 
 
 
-Edits! Edits!
-
-```{r}
-plot(runif(100))
-sum(runif(100))
-```
 
 -------
 
-NOTE: Your DA can be broken up into multiple pages if that helps with your organization.
 
-* Introduce what motivates your DA
+## Rubric: On this page
+
+you will
+
+
+* Introduce what motivates your Data Analysis (DA)
   * Which variables and relationships are you most interested in?
   * What questions are you interested in answering?
 * Breadth of the DA
@@ -37,6 +35,8 @@ NOTE: Your DA can be broken up into multiple pages if that helps with your organ
   * You should also include some kind of formal statistical model and/or inference. This could be a linear regression, logistic regression, hypothesis testing etc.
   * Explain the techniques you used for validating your results.
   * Describe the results of your modelling and make sure to give a sense of the uncertainty in your estimates and conclusions.
+* Explain the flaws and limitations of your analysis
+  * Are there some assumptions that you needed to make that might not hold? Is there other data that would help to answer your questions? ...
 * Clarity Figures
   * Are your figures/tables/results easy to read, informative, without problems like overplotting, hard-to-read labels, etc?
   * Each figure should provide a key insight. Too many figures or other data summaries can detract from this.
@@ -46,3 +46,6 @@ NOTE: Your DA can be broken up into multiple pages if that helps with your organ
   * Do you provide interpretations that suggest further analysis or explanations for observed phenomenon?
 * Organization and cleanliness.
   * Make sure to remove excessive warnings, use clean easy-to-read code, organize with sections or multiple pages, use bullets, etc.
+  
+  
+**NOTE**: Your Data Analysis can be broken up into multiple pages if that helps with your organization.
