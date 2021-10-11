@@ -1,5 +1,7 @@
 # MA[46]15 Final Project
 
+**Make sure to read the full README file below, all pages and posts on your initial site, and look through the files in the `content` folder and the `config.toml` file.
+
 For your final project, your team will be 
 
 * finding data, 
@@ -15,12 +17,12 @@ Here are the steps you'll need to take. __Please only start this once you have a
 
 
 0. Your team will share a Github repository for the final project. Accept this assignment and make sure to pick your team. The first person who accepts will have to create a new team. Also, make sure to accept the invitation to the sussmanbu organization on Github.
-1. Choose a team leader. They will be in charge of the _Netlify_ account which is used to host the web site.
+1. Choose a team member to be in charge of the _Netlify_ account which is used to host the web site. Let me know the Github user name for this team member.
 
-## Steps for your team leader
+## Steps for Netlify Setup (only one team member should do this)
 
-2. The team leader will go to [https://www.netlify.com/](https://www.netlify.com/). Click _Sign Up_ and use your Github account. Follow the steps to sign up.
-3. Once you are set up and logged in, click _New site from Git_. Click _Github_ and authorize Netlify to access your account by clicking "Configure the Netlify app on GitHub" link.
+2. Go to [https://www.netlify.com/](https://www.netlify.com/). Click _Sign Up_ and use your Github account. Follow the steps to sign up.
+3. Once you are set up and logged in, click _New site from Git_. Click _Github_ and authorize Netlify to access your account by clicking "Configure the Netlify app on GitHub" link. (If you have trouble with this step it might be because I need to add you to the `sussmanbu` organization.)
 4. Find your teams repository using the _Search repos_ field and select it from the list.
 5. You shouldn't have to adjust any options so click _Deploy Site_. Your site is now being deployed.
 6. In the meantime, click _Site Settings_ and then _Change site name_ and use your team name (or something close) as the site name.
@@ -44,7 +46,7 @@ Everyone should now have their computer set up with blogdown, hugo and your team
 In turn do the following.
 
 0. Press Pull in the Git tab to get the latest changes.
-1. Open the `about.md` file from the `content` folder and add your name to the file, write a quick introduction, and include a link to your Github account page. (The first person can remove Russell and Dan from the list).
+1. Open the `about.md` file from the `content` folder and add your name to the file, write a quick introduction, and include a link to your Github account page. (The first person can remove Wan-chi and Dan from the list).
 2. Commit the changes to `about.md` and Push your changes.
 3. Check that your changes are showing up on netlify.
 4. Make sure to wait until one team member is done before the next person starts again at 0.
@@ -63,9 +65,9 @@ Read through the posts on your website to learn a bit about how things work. Loo
 Blogdown works with Hugo to build website out of markdown and R markdown files.
 The details are not too important but there are a few key things.
 
-First, most of the time you will be working in the `content` folder. This is where the markdown files will live.
+First, most of the time you will be working in the `content` folder. This is where the RMarkdown files will live.
 
-Blogdown takes the files in `content` and knits them into `html` files. It uses the files in the `themes` folder to figure what the pages should look like and to construct the site with all the links and layouts.
+Blogdown takes the files in `content` and knits them into `html` files. Hugo uses the files in the `themes` folder to figure what the pages should look like and to construct the site with all the links and layouts.
 I picked out a `theme` that I like and made a few changes. You are welcome to keep it, change it, or use a different theme but be aware that this can become tricky.
 
 Hugo also includes anything in the `static` folder as-is on your site, so this is where Blogdown puts all the files for the figures. It is also a good place to keep your data or add in your own images.
@@ -83,14 +85,17 @@ For example, if you click Preview in RStudio when you are editing the About page
 If you commit this the website might not look the way we want it to.
 
 To preview files, always use the `blogdown::serve_site()` command and navigate to the page you are working on.
-Everytime you save, blogdown will rebuild the website and tell you if you had any errors.
+Every time you save, blogdown will rebuild the website and tell you if you had any errors.
+(Don't use the `knit` button in RStudio. If you do you'll have to make sure that `blogdown` re-knits that page.)
 To stop previewing the website you can run `blogdown::stop_server()`
 
-Some general guidlines are:
+Make sure to frequently check that you don't have any problems with `blogdown::check_site()`. This may give you a hint about something to correct.
+
+Some general guidelines are:
 
 1. Always commit `.Rmd` and `.Rmarkdown` files. Otherwise, your teammates won't be able to see the original R code.
 2. Always commit `.md` files.
-3. Usually commit `.html` files unless they share a name with a `.md`.
+3. Usually commit `.html` files unless they share a name with a `.md` file.
 4. Always commit changes in the `static` folder.
 
 __Never__ commit large data files. This can cause some challenges. 
