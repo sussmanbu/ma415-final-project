@@ -4,6 +4,7 @@
 
 For your final project, your team will be 
 
+
 * finding data,
 * cleaning the data,
 * performing an exploratory data analysis, 
