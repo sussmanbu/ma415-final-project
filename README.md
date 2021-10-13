@@ -5,7 +5,7 @@
 For your final project, your team will be 
 
 
-* finding data,
+* discovering data,
 * cleaning the data,
 * performing an exploratory data analysis, 
 * using statistical models and other techniques to draw conclusions, and
