@@ -14,6 +14,7 @@ For your final project, your team will be
 We'll be using the `blogdown` package to maintain our website. `blogdown` makes things easier but there are still some snags that you might run into. 
 You will be working with your group to maintain the website, providing weekly blog posts and culminating with the deployment of pages detailing your analysis.
 
+
 Here are the steps you'll need to take. __Please only start this once you have a set team of 4 or 5__.
 
 
