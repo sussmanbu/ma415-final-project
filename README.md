@@ -11,7 +11,7 @@ For your final project, your team will be
 * using statistical models and other techniques to draw conclusions, and
 * communicating what you learned on website.
 
-We'll be using the `blogdown` package to maintain our website. `blogdown` makes things easier but there are still some snags that you might run into. 
+We'll use the `blogdown` package to maintain our website. `blogdown` makes things easier but there are still some snags that you might run into. 
 You will be working with your group to maintain the website, providing weekly blog posts and culminating with the deployment of pages detailing your analysis.
 
 
