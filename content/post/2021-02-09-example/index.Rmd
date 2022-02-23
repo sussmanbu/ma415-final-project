@@ -1,7 +1,7 @@
 ---
 title: Example Post
 author: Daniel Sussman
-date: '2021-10-11'
+date: '2022-02-23'
 slug: []
 categories: []
 tags: []
@@ -9,12 +9,12 @@ description: This is a description of the post.
 toc: yes
 authors: []
 series: []
-lastmod: '2021-10-11'
+lastmod: '2022-02-23'
 featuredVideo: ~
 featuredImage: /images/a-static-image.png
 ---
 
-This file is from `content/post/2021-02-09-example/index.Rmd`. I made it by running `blogdown::new_post("example", ext = ".Rmd")`.
+This file is from `content/post/2021-02-09-example/index.Rmd`. I made it by running `blogdown::new_post("example", ext = ".Rmd")` in the console.
 
 Note that images like the one above are stored in `static/images` in your project folder.
 
@@ -67,3 +67,18 @@ Alternatively, you can use the "Addins" menu.
 ![](images/New Post.png)
 
 Just make sure to select `.Rmd` for the format so you can include and run `R` code.
+
+
+---
+
+## I can't see my updates
+
+When you want to see how the changes or additions you made will look on the website, you need to run `blogdown::serve_site()` which will knit Rmd files as they change and create a local web server that you can use to preview the site.
+
+If you are not seeing the changes you were hoping for:
+
+1. Check to make sure you are not getting any knitting errors. In the Console, you might something like 
+`Error : Failed to render content/post/2021-02-09-example/index.Rmd`
+You should look above that for any errors. Usually it will say something like `Quitting from lines 83-84 (index.Rmd)` which can help you to isolate where the error is. (Note, it might not be in the file you have been editing if an error was introduced by a team mate).
+
+2. If you don't see any errors, it might be that `serve_site()` hasn't yet recognized the changes you've made. To force it to compile you can add a small change to the .Rmd files, like a line break. This will update the modification time on the file which should cause the file to be knitted. Another option is to use Addins -> Touch File (see screenshot above).

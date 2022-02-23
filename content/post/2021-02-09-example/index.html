@@ -1,7 +1,7 @@
 ---
 title: Example Post
 author: Daniel Sussman
-date: '2021-10-11'
+date: '2022-02-23'
 slug: []
 categories: []
 tags: []
@@ -9,7 +9,7 @@ description: This is a description of the post.
 toc: yes
 authors: []
 series: []
-lastmod: '2021-10-11'
+lastmod: '2022-02-23'
 featuredVideo: ~
 featuredImage: /images/a-static-image.png
 ---
@@ -20,7 +20,7 @@ featuredImage: /images/a-static-image.png
 
 </div>
 
-<p>This file is from <code>content/post/2021-02-09-example/index.Rmd</code>. I made it by running <code>blogdown::new_post("example", ext = ".Rmd")</code>.</p>
+<p>This file is from <code>content/post/2021-02-09-example/index.Rmd</code>. I made it by running <code>blogdown::new_post("example", ext = ".Rmd")</code> in the console.</p>
 <p>Note that images like the one above are stored in <code>static/images</code> in your project folder.</p>
 <div id="just-like-an-rmarkdown" class="section level2">
 <h2>Just like an RMarkdown</h2>
@@ -89,4 +89,16 @@ Figure 1: Wow captions too!
 <p>Alternatively, you can use the “Addins” menu.</p>
 <p><img src="images/New%20Post.png" /></p>
 <p>Just make sure to select <code>.Rmd</code> for the format so you can include and run <code>R</code> code.</p>
+<hr />
+<div id="i-cant-see-my-updates" class="section level2">
+<h2>I can’t see my updates</h2>
+<p>When you want to see how the changes or additions you made will look on the website, you need to run <code>blogdown::serve_site()</code> which will knit Rmd files as they change and create a local web server that you can use to preview the site.</p>
+<p>If you are not seeing the changes you were hoping for:</p>
+<ol style="list-style-type: decimal">
+<li><p>Check to make sure you are not getting any knitting errors. In the Console, you might something like
+<code>Error : Failed to render content/post/2021-02-09-example/index.Rmd</code>
+You should look above that for any errors. Usually it will say something like <code>Quitting from lines 83-84 (index.Rmd)</code> which can help you to isolate where the error is. (Note, it might not be in the file you have been editing if an error was introduced by a team mate).</p></li>
+<li><p>If you don’t see any errors, it might be that <code>serve_site()</code> hasn’t yet recognized the changes you’ve made. To force it to compile you can add a small change to the .Rmd files, like a line break. This will update the modification time on the file which should cause the file to be knitted. Another option is to use Addins -&gt; Touch File (see screenshot above).</p></li>
+</ol>
+</div>
 </div>
