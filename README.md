@@ -53,7 +53,7 @@ In turn, do the following:
 4. Make sure to wait until one team member is done before the next person starts again at 0.
 
 Finally, the last person to update the about page will update the `config.yaml` file.
-The only change you need to make is to update the `title` to be your group name.
+The only changes you need to make are to update the `baseURL` to match your netlify.app URL and update the `title` to be your group name.
 Again, commit and push your changes.
 
 You should be all set and see the changes again on Netlify.
