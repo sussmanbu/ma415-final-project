@@ -36,7 +36,7 @@ Here are the steps you'll need to take. __Please only start this once you have a
 
 2. Using RStudio, clone your repository to your laptop and open the project file.
 3. Install the blogdown package using `install.packages("blogdown")`. 
-4. Run `blogdown::install_hugo()`. _Hugo_ / _blogdown_ are the tools for transforming your site from Markdown/RMarkdown into the structure of the website.
+4. Run `blogdown::install_hugo('0.90.1')`. _Hugo_ / _blogdown_ are the tools for transforming your site from Markdown/RMarkdown into the structure of the website.
 5. Run the command `blogdown::serve_site()`. If all goes well you will see a preview of the site in the RStudio Viewer.
 
 __WARNING__ Always use `blogdown::serve_site()` to preview your changes and updates.
