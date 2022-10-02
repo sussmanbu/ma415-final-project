@@ -50,7 +50,7 @@ source(
 
 Note how I use the `here::here` function from the [`here` package](https://here.r-lib.org/articles/here.html) to avoid path problems.
 This function is used to specify directories within the project's root directory.
-You should never use absolute paths (eg. `/Users/danielsussman/path/to/project/` or `C:\\MA415\\Final_Project\\`) and using `here` ensures that it doesn't matter what the current working directory is as long as you have the this RStudio Project open.
+You should never use absolute paths (eg. `/Users/danielsussman/path/to/project/` or `C:\\MA415\\Final_Project\\`) and using `here` ensures that it doesn't matter what the current working directory is as long as you have this RStudio Project open.
 
 ----
 
@@ -60,7 +60,7 @@ You should never use absolute paths (eg. `/Users/danielsussman/path/to/project/`
 
 ### `load_and_clean_data.R`
 
-The idea behind this file is that someone coming to your website could largely replicate your analyses by first running this script on the original data sets to clean them.
+The idea behind this file is that someone coming to your website could largely replicate your analyses after running this script on the original data sets to clean them.
 This file might create a derivative data set that you then use for your subsequent analysis.
 Note that you don't need to run this script from every post/page.
 Instead, you can load in the results of this script, which could be plain text files or `.RData` files. In your data page you'll describe how these results were created. If you have a very large data set, you might save smaller data sets that you can use for exploration purposes.
@@ -69,10 +69,6 @@ To link to this file, you can use `[cleaning script](/load_and_clean_data.R)`.
 
 When you are loading in data, I recommend using the `here::here` function to specify the file path. This function is used to specify a path relative to your project's root directory. Hence, you can read a file using eg, `read_csv(here::here("dataset/data_file.csv"))`.
 
-### Flexdashboard
-
-If you are creating a flexdashboard interactive, the .Rmd and the knitted files should be kept in a folder in `/static/`. This will ensure that your flexdashboard is a full page interactive.
-See [the big picture page for other details.](/big_picture/).
 
 ### Shiny Interactive
 
