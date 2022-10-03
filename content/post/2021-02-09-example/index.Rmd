@@ -28,6 +28,8 @@ library(tidyverse)
 msleep %>%
   group_by(vore) %>%
   summarize(`average body weight` = mean(bodywt))
+
+ggplot(msleep, aes(x = bodywt, y = vore)) + geom_col()
 ```
 
 <br>
