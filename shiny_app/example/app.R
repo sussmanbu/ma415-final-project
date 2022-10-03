@@ -10,27 +10,29 @@
 library(tidyverse)
 library(shiny)
 df <- read_csv("loan_refusal.csv") %>% 
-  pivot_longer(cols(-bank), names_to = "group", values_to = "reject_rate")
+  pivot_longer(cols = min:hiwhite, names_to = "group", values_to = "reject_rate")
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
 
-    # Application title
-    titlePanel("Old Faithful Geyser Data"),
+  # Application title
+  titlePanel("Loan refusal"),
 
-    # Sidebar with a slider input for number of bins 
-    sidebarLayout(
-        sidebarPanel(
-            checkboxInput("group",
-                        "Select groups",
-                        unique(df$group))
-        ),
-
-        # Show a plot of the generated distribution
-        mainPanel(
-           plotOutput("barPlot")
-        )
+  # Sidebar with a slider input for number of bins 
+  sidebarLayout(
+    sidebarPanel(
+      checkboxGroupInput(
+        "group",
+        "Select groups",
+        unique(df$group),
+        selected = unique(df$group)[1]
+      )
+    ),
+    # Show a plot of the generated distribution
+    mainPanel(
+     plotOutput("barPlot")
     )
+  )
 )
 
 # Define server logic required to draw a histogram
@@ -41,7 +43,7 @@ server <- function(input, output) {
         df %>%
           filter(group %in% input$group) %>% 
           ggplot(aes(y = bank, x = reject_rate, fill = group)) +
-          geom_bar(position = "dodge")
+          geom_col(position = "dodge")
     })
 }
 
