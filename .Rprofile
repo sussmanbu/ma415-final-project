@@ -19,4 +19,5 @@ options(
   blogdown.method = 'html',
   blogdown.hugo.version = "0.90.1",
   blogdown.ext = ".Rmd"
+  blogdown.author = "Daniel Sussman"
 )

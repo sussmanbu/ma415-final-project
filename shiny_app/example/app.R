@@ -39,7 +39,7 @@ ui <- fluidPage(
 server <- function(input, output) {
 
     output$barPlot <- renderPlot({
-        # generate bins based on input$bins from ui.R
+        # show data for  input$group from ui.R
         df %>%
           filter(group %in% input$group) %>% 
           ggplot(aes(y = bank, x = reject_rate, fill = group)) +
