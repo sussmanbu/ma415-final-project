@@ -64,15 +64,14 @@ Look at the structure of the `content` folder and compare it to the website stru
 
 ## How does blogdown work?
 
-Blogdown works with Hugo to build website out of markdown and R markdown files.
+Blogdown works with Hugo to build a website out of markdown and R markdown files.
 The details are not too important but there are a few key things.
 
 First, most of the time you will be working in the `content` folder. This is where the RMarkdown files will live.
 
 Blogdown takes the files in `content` and knits them into `html` files. Hugo uses the files in the `themes` folder to figure what the pages should look like and to construct the site with all the links and layouts.
 I picked out a `theme` that I like and made a few changes. You are welcome to keep it, change it, or use a different theme but be aware that this can become tricky.
-
-Hugo also includes anything in the `static` folder as-is on your site, so this is where Blogdown puts all the files for the figures. It is also a good place to keep your data or add in your own images.
+Hugo also includes anything in the `static` folder as-is on your site.
 
 Finally, once you run `serve_site`, you should see a new folder called `public`. This folder is where the built website lives. Generally, you can just ignore this folder since any edits you make should be in the `content` folder or `static`.
 Note that our `.gitignore` file tells `git` to ignore any changes in the `public` folder.
@@ -80,7 +79,6 @@ This is because Netlify will run Hugo for you and deploy the resulting public fo
 
 __NOTE__ Netlify only runs Hugo so it will not compile your R markdown files. This is why you have to commit the `html` files, as otherwise those pages/posts will not appear.
 
-## What to commit?
 
 With `blogdown` it can get a little tricky to know what should be committed and what should not.
 For example, if you click Preview in RStudio when you are editing the About page, R will compile that to an `html` file.
@@ -89,7 +87,14 @@ If you commit this the website might not look the way we want it to.
 To preview files, always use the `blogdown::serve_site()` command and navigate to the page you are working on.
 Every time you save, blogdown will rebuild the website and tell you if you had any errors.
 (Don't use the `knit` button in RStudio. If you do you'll have to make sure that `blogdown` re-knits that page.)
-To stop previewing the website you can run `blogdown::stop_server()`
+If you don't see your updates try the following. 
+
+1. Check you saved the file.
+2. Check for error messages in the console indicating there was an error when knitting the document.
+3. Click "Addins -> Touch File" to update the Last Modified time so that `serve_site` will try to knit it again.
+
+
+To stop previewing the website you can run `blogdown::stop_server()`.
 
 Make sure to frequently check that you don't have any problems with `blogdown::check_site()`. This may give you a hint about something to correct.
 
