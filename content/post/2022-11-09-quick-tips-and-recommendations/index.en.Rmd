@@ -1,0 +1,83 @@
+---
+title: Quick Tips and Recommendations
+author: Daniel Sussman
+date: '2022-11-09'
+slug: []
+categories: []
+tags: []
+description: ~
+toc: yes
+authors: []
+series: []
+lastmod: '2022-11-09T08:41:50-05:00'
+featuredVideo: ~
+featuredImage: ~
+---
+
+
+
+
+
+### Save your cleaned data
+
+Everyone should consider saving their data in .RData format. This can be done using `save(dataset_tibble, file = "dataset/dataset_tibble.RData")` in your `load_and_clean_data.R` file. You can then quickly load your data with `load(here::here("dataset", "dataset_tibble.RData"))`.
+
+### Be explicit about levels
+
+Part of cleaning the data is redoing factors to be more meaningful and easier to use. This can include changing the `levels` as well as the order of the levels.
+
+
+### Avoid warnings
+
+Try to avoid warnings, including parsing warnings. The best practice is to write code that is explicit, for example about column types, so that if something changes, that will become clear. You also might consider using `suppressPackageStartupMessages`, `suppressWarnings`, and `suppressMessages`. It is better to not suppress, but sometimes that is the easiest.
+
+
+```{r}
+suppressPackageStartupMessages(library(tidyverse))
+```
+
+### Format your output
+
+Avoid default `summary(lm(y ~ x, data))` output. Instead, use functions from `broom` and `knitr::kable` or another tool for formatting tables.
+
+```{r}
+lm_mod <- lm(hwy ~ cty, data = mpg)
+broom::tidy(lm_mod) %>%
+  select(term, estimate, p.value) %>% 
+  mutate(across(where(is.numeric), ~round(., 2))) %>% 
+  DT::datatable()
+```
+
+Generally, formatted output is preferred to console output.
+
+
+### Adjust your figures
+
+You might want to adjust your figure sizes and other properties. Increasing or decreasing `fig.width` will tend to decrease or increase, respectively, the size of text. Increasing `fig.height` will change the height. If you have a plot without too many elements, then consider using `dev="svg"` to make vector graphics. Note this can create very large files if you have lots of points in your plot. Also, use captions so that your figures are numbered.
+
+
+ 
+```{r}
+ggplot(msleep, aes(x = sleep_total, y = bodywt)) +
+  geom_point() + scale_x_log10() + scale_y_log10()
+```
+
+```{r, fig.cap = "Wow captions too!", fig.height=10, dev="svg", fig.width = 20}
+ggplot(msleep, aes(x = sleep_total, y = bodywt)) +
+  geom_point() + scale_x_log10() + scale_y_log10()
+```
+
+Also, use captions so that your figures are numbered and you can refer to them.
+ 
+Here is a list of some potentially useful options with their default values.
+
+```
+fig.keep :  high 
+fig.show :  asis 
+fig.align :  default
+fig.width :  7 
+fig.height :  7 
+dpi : 72
+dev : "png"
+```
+

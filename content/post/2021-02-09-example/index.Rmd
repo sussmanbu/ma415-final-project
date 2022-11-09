@@ -45,7 +45,7 @@ msleep %>%
 
 ... or make a plot.
 
-```{r, fig.cap = "Wow captions too!"}
+```{r, fig.cap = "Wow captions too!", fig.height=10, dev="svg", fig.width = 20}
 ggplot(msleep, aes(x = sleep_total, y = bodywt)) +
   geom_point() + scale_x_log10() + scale_y_log10()
 ```
