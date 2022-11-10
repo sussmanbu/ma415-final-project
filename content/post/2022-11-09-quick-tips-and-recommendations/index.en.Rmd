@@ -33,6 +33,7 @@ Try to avoid warnings, including parsing warnings. The best practice is to write
 
 
 ```{r}
+knitr::opts_knit$set(bookdown.internal.label = TRUE)
 suppressPackageStartupMessages(library(tidyverse))
 ```
 
@@ -62,14 +63,23 @@ ggplot(msleep, aes(x = sleep_total, y = bodywt)) +
   geom_point() + scale_x_log10() + scale_y_log10()
 ```
 
-```{r, fig.cap = "Wow captions too!", fig.height=10, dev="svg", fig.width = 20}
+```{r stuff, fig.cap = "Wow captions too!", fig.height=10, dev="svg", fig.width = 20}
 ggplot(msleep, aes(x = sleep_total, y = bodywt)) +
   geom_point() + scale_x_log10() + scale_y_log10()
 ```
 
-Also, use captions so that your figures are numbered and you can refer to them.
- 
+
+
+Also, use captions so that your figures are numbered and you can refer to them with labels like this `\@ref(fig:stuff)`.
+
+> Figure \@ref(fig:stuff) is not a picture of a cat.
+
+To use that, you need to run `knitr::opts_knit$set(bookdown.internal.label = TRUE)` before. If you want you can add that to your `.Rprofile` file in the project root directory.
+
+
 Here is a list of some potentially useful options with their default values.
+
+
 
 ```
 fig.keep :  high 
@@ -79,5 +89,14 @@ fig.width :  7
 fig.height :  7 
 dpi : 72
 dev : "png"
+```
+
+
+### `blogdown::check_site()`
+
+Don't forget to try running `blogdown::check_site()` to check for any problems if something isn't working.
+
+```{r}
+blogdown::check_site()
 ```
 

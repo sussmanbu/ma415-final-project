@@ -39,7 +39,8 @@ featuredImage: ~
 <div id="avoid-warnings" class="section level3">
 <h3>Avoid warnings</h3>
 <p>Try to avoid warnings, including parsing warnings. The best practice is to write code that is explicit, for example about column types, so that if something changes, that will become clear. You also might consider using <code>suppressPackageStartupMessages</code>, <code>suppressWarnings</code>, and <code>suppressMessages</code>. It is better to not suppress, but sometimes that is the easiest.</p>
-<pre class="r"><code>suppressPackageStartupMessages(library(tidyverse))</code></pre>
+<pre class="r"><code>knitr::opts_knit$set(bookdown.internal.label = TRUE)
+suppressPackageStartupMessages(library(tidyverse))</code></pre>
 </div>
 <div id="format-your-output" class="section level3">
 <h3>Format your output</h3>
@@ -61,13 +62,17 @@ broom::tidy(lm_mod) %&gt;%
 <p><img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <pre class="r"><code>ggplot(msleep, aes(x = sleep_total, y = bodywt)) +
   geom_point() + scale_x_log10() + scale_y_log10()</code></pre>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-4"></span>
-<img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-4-1.svg" alt="Wow captions too!" width="1920" />
+<div class="figure"><span style="display:block;" id="fig:stuff"></span>
+<img src="{{< blogdown/postref >}}index.en_files/figure-html/stuff-1.svg" alt="Wow captions too!" width="1920" />
 <p class="caption">
 Figure 1: Wow captions too!
 </p>
 </div>
-<p>Also, use captions so that your figures are numbered and you can refer to them.</p>
+<p>Also, use captions so that your figures are numbered and you can refer to them with labels like this <code>\@ref(fig:stuff)</code>.</p>
+<blockquote>
+<p>Figure <a href="#fig:stuff">1</a> is not a picture of a cat.</p>
+</blockquote>
+<p>To use that, you need to run <code>knitr::opts_knit$set(bookdown.internal.label = TRUE)</code> before. If you want you can add that to your <code>.Rprofile</code> file in the project root directory.</p>
 <p>Here is a list of some potentially useful options with their default values.</p>
 <pre><code>fig.keep :  high 
 fig.show :  asis 
@@ -76,4 +81,67 @@ fig.width :  7
 fig.height :  7 
 dpi : 72
 dev : &quot;png&quot;</code></pre>
+</div>
+<div id="blogdowncheck_site" class="section level3">
+<h3><code>blogdown::check_site()</code></h3>
+<p>Don’t forget to try running <code>blogdown::check_site()</code> to check for any problems if something isn’t working.</p>
+<pre class="r"><code>blogdown::check_site()</code></pre>
+<pre><code>## ― Running a series of automated checks for your blogdown website project...</code></pre>
+<pre><code>## --------------------------------------------------------------------------------</code></pre>
+<pre><code>## ○ A successful check looks like this.</code></pre>
+<pre><code>## ● [TODO] A check that needs your attention looks like this.</code></pre>
+<pre><code>## | Let&#39;s check out your blogdown site!</code></pre>
+<pre><code>## --------------------------------------------------------------------------------</code></pre>
+<pre><code>## ― Checking config.yaml</code></pre>
+<pre><code>## | Checking &quot;baseURL&quot; setting for Hugo...</code></pre>
+<pre><code>## ○ Found baseURL = &quot;https://ma415final.netlify.app/&quot;; nothing to do here!</code></pre>
+<pre><code>## | Checking &quot;ignoreFiles&quot; setting for Hugo...</code></pre>
+<pre><code>## ○ &quot;ignoreFiles&quot; looks good - nothing to do here!</code></pre>
+<pre><code>## | Checking setting for Hugo&#39;s Markdown renderer...</code></pre>
+<pre><code>## ○ All set! Found the &quot;unsafe&quot; setting for goldmark.</code></pre>
+<pre><code>## ― Check complete: config.yaml</code></pre>
+<pre><code>## ― Checking .gitignore</code></pre>
+<pre><code>## | Checking for items to remove...</code></pre>
+<pre><code>## ○ Nothing to see here - found no items to remove.</code></pre>
+<pre><code>## | Checking for items to change...</code></pre>
+<pre><code>## ○ Nothing to see here - found no items to change.</code></pre>
+<pre><code>## | Checking for items you can safely ignore...</code></pre>
+<pre><code>## ○ Found! You have safely ignored: .DS_Store, Thumbs.db, .hugo_build.lock</code></pre>
+<pre><code>## | Checking for items to ignore if you build the site on Netlify...</code></pre>
+<pre><code>## ○ Found! You have safely ignored: /public/, /resources/</code></pre>
+<pre><code>## | Checking for files required by blogdown but not committed...</code></pre>
+<pre><code>## ○ Great! Did not find such files.</code></pre>
+<pre><code>## ― Check complete: .gitignore</code></pre>
+<pre><code>## ― Checking Hugo</code></pre>
+<pre><code>## | Checking Hugo version...</code></pre>
+<pre><code>## ○ Found 2 versions of Hugo. You are using Hugo 0.90.1.</code></pre>
+<pre><code>## | Checking .Rprofile for Hugo version used by blogdown...</code></pre>
+<pre><code>## ○ blogdown is using Hugo 0.90.1 to build site locally.</code></pre>
+<pre><code>## ― Check complete: Hugo</code></pre>
+<pre><code>## ― Checking netlify.toml...</code></pre>
+<pre><code>## ○ Found HUGO_VERSION = 0.90.1 in [build] context of netlify.toml.</code></pre>
+<pre><code>## | Checking that remote &amp; local Hugo versions match...</code></pre>
+<pre><code>## ○ It&#39;s a match! Local and remote Hugo versions are identical (0.90.1).</code></pre>
+<pre><code>## | Checking that Netlify &amp; local Hugo publish directories match...</code></pre>
+<pre><code>## ○ Good to go - blogdown and Netlify are using the same publish directory: public</code></pre>
+<pre><code>## ― Check complete: netlify.toml</code></pre>
+<pre><code>## ― Checking content files</code></pre>
+<pre><code>## | Checking for validity of YAML metadata in posts...</code></pre>
+<pre><code>## ○ All YAML metadata appears to be syntactically valid.</code></pre>
+<pre><code>## | Checking for previewed content that will not be published...</code></pre>
+<pre><code>## ○ Found 0 files with future publish dates.</code></pre>
+<pre><code>## ○ Found 0 files marked as drafts.</code></pre>
+<pre><code>## | Checking your R Markdown content...</code></pre>
+<pre><code>## ○ All R Markdown files have been knitted.</code></pre>
+<pre><code>## ● [TODO] Found 1 R Markdown file to update by re-rendering:
+## 
+##   content/post/2022-11-09-quick-tips-and-recommendations/index.en.Rmd
+## 
+##   To update a file, re-knit or use blogdown::build_site(build_rmd = &#39;timestamp&#39;)</code></pre>
+<pre><code>## | Checking for .html/.md files to clean up...</code></pre>
+<pre><code>## ○ Found 0 duplicate .html output files.</code></pre>
+<pre><code>## ○ Found 0 incompatible .html files to clean up.</code></pre>
+<pre><code>## | Checking for the unnecessary &#39;content/&#39; directory in theme...</code></pre>
+<pre><code>## ○ Great! Your theme does not contain the content/ directory.</code></pre>
+<pre><code>## ― Check complete: Content</code></pre>
 </div>
